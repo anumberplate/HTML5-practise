@@ -10,98 +10,117 @@
   </head>
 
   <body>
-    <h1>My Goals for the Year</h1>
+    <header>
+        <h1>My Goals for the Year</h1>
+      <nav aria-label = "primary-navigation">
+        
+        <ul>
+          <li>
+            <a href="#html">Learn HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a vacation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <hr>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="#html">Learn HTML</a>
-        </li>
-        <li>
-          <a href="#vacation">Planning a vacation</a>
-        </li>
-      </ul>
-    </nav>
+    <main>
+      <article id = "html">
+        <h2>I'm ready to learn HTML</h2>
+        <p>This is my first webpage</p>
+        <section>
+          <h3>HTML5</h3>
+          <img src="img/pexels-followingnyc-8371016.jpg" alt="NY-City" title = "I am learning NYC" width = "300" height="400">
+          <figure>
+            <figcaption>
+              An example of HTML5 code
+            </figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello world&lt;h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+        <section>
+          <h3>My daily Schedule</h3>
+          <p>Let me tell you how:</p>
+              <ol>
+                <li>...I learn more about web dev.</li>
+                <li>...I plan out my Schedule</li>
+                <li>...I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/" target="_blank">MDN</a> </abbr></li>
+              </ol>
+              <aside>
+                <details>
+                  <summary>Guess the <mark>number of hours</mark> I code per day</summary>
 
+                  <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time>  every morning</p>
+                </details>
+              </aside>
+          </section>
+        </article>  
+
+      <hr>
+      
+      <article id = "vacation">
+        <h2>I am also planning a vacation</h2>
+        <p>I've been working hard and <em>really need a gateway</em></p>
+        <p>I live in <abbr title = "Kansas">KS</abbr> so I want to visit a beach</p>
+        <section>
+          <h3>Places I'd like to Visit</h3>
+          <ul>
+          <li>
+            <p>I've heard good things about the Caribbean</p>
+            <figure>
+              <img src="img/pexels-jeshoots-7433.jpg" alt="Somewhere cars" title = "I love cars" width = "400" height = "250" loading = "lazy">
+              <figcaption>
+                Person driving car
+              </figcaption>
+            </figure> 
+          </li>
+          <li>
+            <p>I've heard good things about going here: </p>
+            <address>
+              Southern Palms Beach Resort<br>
+              Diani, Ukunda, South Coast<br>
+              Kwale, Kenya, Kenya 00501<br>
+            </address>
+            <figure>
+              <img src="img/pexels-lee-starry-1667861-32418818.jpg" alt="Lee Starry" title = "Lee-starry is funny" loading = 'lazy'
+              width = "400" height = "450">
+              <figcaption>
+                A building taken a photo by Lee
+              </figcaption>
+            </figure>
+            </li>
+          </ul>
+        </section>
+
+        <!--TODO: Add more places-->
+        <section>
+          <h3>Places I want to Avoid</h3>
+          <dl>
+              <dt>North Pole</dt>
+              <dd>I hear this is <strong>cold</strong></dd>
+
+              <dt>South pole</dt>
+              <dd>This is also cold</dd>
+
+              <dt>Mountain Tops</dt>
+              <dd>These are also cold</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
     <hr>
-    <section id = "html">
-
-      <h2>I'm ready to learn HTML</h2>
-      <p>This is my first webpage</p>
-      <img src="img/pexels-followingnyc-8371016.jpg" alt="NY-City" title = "I am learning NYC" width = "300" height="400">
-      <figure>
-        <figcaption>
-          An example of HTML5 code
-        </figcaption>
-        <p>
-           <code>&lt;h1&gt;Hello world&lt;h1&gt;</code>
-        </p>
-      </figure>
-
-      <h3>My daily Schedule</h3>
-      <p>Let me tell you how:</p>
-          <ol>
-            <li>...I learn more about web dev.</li>
-            <li>...I plan out my Schedule</li>
-            <li>...I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/" target="_blank">MDN</a> </abbr></li>
-          </ol> 
-    </section>  
-
-    <hr>
-    
-    <section id = "vacation">
-      <h2>I am also planning a vacation</h2>
-      <p>I've been working hard and <em>really need a gateway</em></p>
-      <p>I live in <abbr title = "Kansas">KS</abbr> so I want to visit a beach</p>
-
-      <h3>Places I'd like to Visit</h3>
-      <ul>
-      <li>
-        <p>I've heard good things about the Caribbean</p>
-        <figure>
-          <img src="img/pexels-jeshoots-7433.jpg" alt="Somewhere cars" title = "I love cars" width = "400" height = "250" loading = "lazy">
-          <figcaption>
-            Person driving car
-          </figcaption>
-        </figure> 
-      </li>
-      <li>
-        <p>I've heard good things about going here: </p>
-        <address>
-          Southern Palms Beach Resort<br>
-          Diani, Ukunda, South Coast<br>
-          Kwale, Kenya, Kenya 00501<br>
-        </address>
-        <figure>
-          <img src="img/pexels-lee-starry-1667861-32418818.jpg" alt="Lee Starry" title = "Lee-starry is funny" loading = 'lazy'
-          width = "400" height = "450">
-          <figcaption>
-            A building taken a photo by Lee
-          </figcaption>
-        </figure>
-        </li>
-      </ul>
-
-      <!--TODO: Add more places-->
-      <h3>Places I want to Avoid</h3>
-      <dl>
-          <dt>North Pole</dt>
-          <dd>I hear this is <strong>cold</strong></dd>
-
-          <dt>South pole</dt>
-          <dd>This is also cold</dd>
-
-          <dt>Mountain Tops</dt>
-          <dd>These are also cold</dd>
-      </dl>
-    </section>
-
-    <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Kyle Aluma</a>&gt;&gt;&gt;
-    <p>
-      <a href="#">Back to top</a>
-    </p>
+    <footer>
+      <p>
+      &lt;&lt;&lt; &copy; <a href="about.html">Kyle Aluma</a>&gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
   </body>
 </html>
